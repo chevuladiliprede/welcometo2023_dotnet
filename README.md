@@ -46,7 +46,9 @@ Set environment variables :
 2.	ARM_CLIENT_SECRET: Azure Active Directory Application Client Secret
 3.	ARM_SUBSCRIPTION_ID: Azure Subscription ID
 4.	ARM_TENANT_ID: Azure Active Directory Tenant ID
-•	
+•	•	Create an Azure service principal
+•	To enable Terraform to provision resources into your Azure subscription, you should first create an Azure service principal (SP) in Azure Active Directory. This Azure SP grants your Terraform scripts to provision resources in your Azure subscription.
+
 •	Create a new Resource Group named tfstate-rg.
 •	Choose a suitable region (e.g., "US EAST") for the Resource Group.
 
